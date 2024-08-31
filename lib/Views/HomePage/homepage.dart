@@ -1,7 +1,8 @@
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:nyamo/Views/HomePage/dashboard.dart';
+
+import 'package:nyamo/Views/Profile/my_profile.dart';
 import 'package:nyamo/widget/drawer_listile.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
@@ -200,10 +201,12 @@ class Homepage extends StatelessWidget {
           ],
         ),
       ),
-      body: const Column(
-        children: [
-          DashboardScreen(),
-        ],
+      body: const SingleChildScrollView(
+        child: Column(
+          children: [
+            MyProfile(),
+          ],
+        ),
       ),
     );
   }

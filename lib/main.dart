@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nyamo/Views/HomePage/homepage.dart';
+import 'package:nyamo/Views/Profile/my_profile.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 //import 'package:nyamo/Views/Auth/login.dart';
 // import 'package:nyamo/Views/Invitation/accept_invitation.dart';
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
     return ResponsiveSizer(builder: (context, orientation, screenType) {
       return const MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Homepage(),
+        home: MyProfile(),
       );
     });
   }
