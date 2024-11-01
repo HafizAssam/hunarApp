@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:circular_profile_avatar/circular_profile_avatar.dart';
+import 'package:nyamo/Views/HomePage/homepage.dart';
 import 'package:nyamo/Views/Invitation/invite_friend.dart';
 import 'package:nyamo/widget/auth_textfield.dart';
 import 'package:nyamo/widget/rounded_btn.dart';
@@ -153,7 +154,7 @@ class _ProfileSetupScreenState extends State<ProfileSetupScreen> {
                     Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(
-                        builder: (context) => const InviteFriend(),
+                        builder: (context) => const Homepage(),
                       ),
                     );
                   });
